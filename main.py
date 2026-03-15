@@ -10,7 +10,7 @@ x2 = 0.5 # input neuron 2
 input_layer = [x1, x2] # 2 input neurons
 
 x1weight = 0.1 # weight for input neuron 1
-x2weight = -0.5 # weight for input neuron 2
+x2weight = 0.1 # weight for input neuron 2
 
 output_layer = [0, [x1weight, x2weight]] # 1 output neuron
 
@@ -43,5 +43,5 @@ def plot_inference():
     plt.title('Decision Boundary using Tanh (-1 to 1)')
     plt.show()
 
-print(f"Test inference output: {inference(1, 1)}") # test the inference function
+print(f"Test inference output: {inference(5, 5)}") # test the inference function
 plot_inference() # plot the decision boundary
